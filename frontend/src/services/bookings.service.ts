@@ -7,7 +7,7 @@ export const createBookingService = async (
   { arg }: { arg: Omit<Booking, "id"> }
 ) => {
   try {
-    const res = await axios.post(`api/${url}`, arg);
+    const res = await axios.post(`api${url}`, arg);
 
     return res.data;
   } catch (e) {
@@ -21,7 +21,7 @@ export const deleteBookingService = async (
   url: string,
   { arg }: { arg: string }
 ) => {
-  const res = await axios.delete(`api/${url}/${arg}`);
+  const res = await axios.delete(`api${url}/${arg}`);
 
   toast.success("Booking cancelled successfully");
   return res.data;
