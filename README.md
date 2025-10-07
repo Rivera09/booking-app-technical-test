@@ -25,7 +25,7 @@ The front end is built with **Next.js**, and is using **Auth0** for handling aut
 Install dependencies:
 
 ```bash
-pnpm install
+npm install
 ```
 
 ### Environment Variables
@@ -80,7 +80,13 @@ The backend is built with **Nest.js**, **Auth0**, **Passport**, **Prisma**, and 
 Install dependencies:
 
 ```bash
-npm install
+pnpm install
+```
+
+Start postgreSQL database:
+
+```bash
+docker-compose up -d --build
 ```
 
 ### Environment Variables
